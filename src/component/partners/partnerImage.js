@@ -1,0 +1,26 @@
+export const PartnerImg = [
+    {
+        url:'./Image/Custodian.png'
+    },
+    {
+        url:'./Image/Exchange.png'
+    },
+    {
+        url:'./Image/Firstbank.png'
+    },
+    {
+        url:'./Image/Ins.png'
+    },
+    {
+        url:'./Image/Mutual.jpg'
+    },
+    {
+        url:'./Image/Insurance.jpg'
+    },
+    {
+        url:'./Image/Universal.png'
+    },
+    {
+        url:'./Image/Tangerine.png'
+    },
+]

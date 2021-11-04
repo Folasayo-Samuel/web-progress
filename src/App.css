@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.navbar-nav{
+  margin-left: 100px !important;
+}
+.login{
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+.login:hover{
+  color: #fff !important;
+  background-color: #e7425e;
+  border: none !important;
+  outline-color: #fff !important;
+}
+.nav-link{
+  color: #fff !important;
+}
+.Top{
+  background-image: url("./Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 109vh;
+  width: 100%;
+}
+.plan{
+  color: #fff;
+  width: 40%;
+  margin-top: 250px;
+}
+.Top::after{
+  opacity: 0.5;
+}
+.btn-get{
+  margin-left:10px;
+}
+.part{
+  color: #e7425e;
+}
+.hmm{
+  color: #e7425e !important;
+}
+.hmm:hover{
+  color: #fff !important;
+}
+
+.partner-section{
+  background-color: #faf8f8;
+}
+.partner-imgs{
+  width: 100%;
+  margin: auto;
+}
+.img-box{
+  width:135px;
+  height: 90px;
+}
+.img-box img{
+  width: 100%;
+  height: 80%;
+}
+.Ins{
+  border-bottom: 3px solid #f82c4e;
+  padding-top: 20px; 
+}
+
+.cardtwo{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.cardtwo:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.containertwo {
+  padding: 2px 16px;
+}
+.standOne{
+  background-color: #e7425e;
+  border-radius: 5px ;
+  width: 34%;
+  margin: auto;
+  padding: 10px 0px;
+  color: white;
+  font-size: 3vw !important;
+  text-align: center !important;
+}
+.standTwo{
+  background-color: #1462c9;
+  border-radius: 5px ;
+  width: 34%;
+  margin: auto;
+  padding: 10px 0px;
+  margin-top: 0 !important;
+  color: white;
+  font-size: 3vw!important;
+  text-align: center !important;
+}
+.arrow{
+  color: #e7425e;
+  padding-right: 3px;
+}
+.standThree{
+    background-color: #22d112;
+    border-radius: 5px ;
+    width: 34%;
+    margin: auto;
+    padding: 10px 0px;
+    color: white;
+    font-size: 3vw !important;
+    text-align: center !important;
+}
+.list li{
+  list-style-type: none;
+}
+.card-img{
+  width: 100%;
+  margin: auto;
+}
+.listone li{
+  list-style-type: none;
+}
+.listtwo li{
+  list-style-type: none;
+}
+.background{
+  background-color: #efdee5;
+}
+
+@media screen and (max-width:920px){
+  .navbar-nav{
+    margin-left: 0px !important;
+  }
+  .Top{
+    height: 100vh;
+    width: 100%;
+  }
+  .plan{
+    width: 80%;
+    margin-top: 240px;
+  }
+  .img-box{
+    width:60px;
+    height: 50px;
+  }
+  /* .stand{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stand .fa-heart{
+    width: 300px !important;
+  } */
+}
