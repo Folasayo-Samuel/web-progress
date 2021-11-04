@@ -129,7 +129,37 @@
 .background{
   background-color: #efdee5;
 }
+.rad{
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
 
+}
+.Inss{
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  padding-top: 20px;
+}
+.style li{
+color: #fff;
+}
+.backgrade{
+  background-color: #ff0652;
+  background-image: linear-gradient(to right, rgb(212, 21, 95), rgb(192, 3, 61), rgb(204, 4, 65)  rgb(149, 1, 46));
+}
+.light{
+  color: #fff;
+}
+.righttwo{
+  margin-top: -150px;
+}
+.sub{
+  color: #fff;
+}
+.backy{
+  background-color: #000;
+}
 @media screen and (max-width:920px){
   .navbar-nav{
     margin-left: 0px !important;

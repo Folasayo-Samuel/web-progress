@@ -3,7 +3,8 @@ import Partners from "../../component/partners/partners";
 import InsureSlide from "../../component/insure-slide/insure-slide";
 import Products from "../../component/products/card";
 import Proposition from '../../component/proposition/proposition';
-
+import Features from '../../component/features/features';
+import Subfooter from '../../component/sub-footer/subfooter';
 const Homepage = () => {
   return (
     <div>
@@ -30,6 +31,8 @@ const Homepage = () => {
       <InsureSlide />
       <Products />
       <Proposition />
+      <Features />
+      <Subfooter />
     </div>
   );
 };
