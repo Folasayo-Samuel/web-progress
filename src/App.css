@@ -172,6 +172,10 @@ body {
   padding: 0;
   width: 300px;
 }
+.optionBox {
+  padding-right: 1rem;
+}
+
 .optionBox i {
   display: inline-block;
   padding-right: 1rem;
@@ -226,7 +230,7 @@ body {
   margin-left: 3rem;
 }
 
-.above{
+.above {
   z-index: 4;
 }
 .listtwo li {
@@ -236,7 +240,7 @@ body {
 }
 .background {
   background-color: #efdee5;
-  margin-top: 3rem;
+  margin-top: 6rem;
   /* clip-path: circle(200vh at 50% -20vh); */
 }
 

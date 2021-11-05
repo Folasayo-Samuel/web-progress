@@ -15,34 +15,26 @@ const Products = () => {
               </div>
             </div>
             <div className="containertwo">
-              <h6 className="text-center pt-3">
-                Life Insurance
-              </h6>
+              <h6 className="text-center pt-3">Life Insurance</h6>
               <ul className="list">
                 <li className="pb-3">
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span>Personal
-                  Accident Insurance 
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span>Personal Accident Insurance</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-3">
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span>Life Assurance{" "}
-                  
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span>Life Assurance </span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-5">
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span>Life Savings{" "}
-                  
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span>Life Savings </span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
@@ -59,26 +51,20 @@ const Products = () => {
               </div>
             </div>
             <div className="containertwo">
-              <h6 className="text-center pt-3">
-                Health Insurance
-              </h6>
+              <h6 className="text-center pt-3">Health Insurance</h6>
               <ul className="list">
                 <li className="pb-3">
-                 <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Pharmacy{" "}
-                  
+                  <span className="optionBox">
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Pharmacy </span>
                   </span>
-                 </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-3">
-                 <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Comprehensive
-                  HMO 
+                  <span className="optionBox">
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Comprehensive HMO</span>
                   </span>
-                 </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
               </ul>
@@ -94,67 +80,47 @@ const Products = () => {
               </div>
             </div>
             <div className="containertwo">
-              <h6 className="text-center pt-3">
-                Assets Insurance
-              </h6>
+              <h6 className="text-center pt-3">Assets Insurance</h6>
               <ul className="list">
                 <li className="pb-3">
-                 <span className="optionBox">
-                     
-                  <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Gadget
-                  Insurance 
-                  </span>
-                 </span>
-                  <i class="fas fa-arrow-right"></i>
-                </li>
-                <li className="pb-3">
-                 
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Car and
-                  Automobile Insurance 
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Gadget Insurance</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-3">
-                 
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Building
-                  Insurance 
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Car and Automobile Insurance</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-3">
-                 
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Householders
-                  Insurance 
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Building Insurance</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-3">
-                 
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> Comprehensive
-                  Motor 
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Householders Insurance</span>
                   </span>
+                  <i class="fas fa-arrow-right"></i>
+                </li>
+                <li className="pb-3">
+                  <span className="optionBox">
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> Comprehensive Motor</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
                 <li className="pb-5">
-                 
                   <span className="optionBox">
-                      <i class="far fa-check-square arrow fa-1x"></i>
-                  <span> All 3rd Party
-                  Motor Policies 
-                  </span>
+                    <i class="far fa-check-square arrow fa-1x"></i>
+                    <span> All 3rd Party Motor Policies</span>
                   </span>
                   <i class="fas fa-arrow-right"></i>
                 </li>
