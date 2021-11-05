@@ -1,4 +1,4 @@
-import Fimage from '../../component/features/image/One.jpg';
+import Fimage from '../../component/features/image/One.png';
 const Features = () => {
     return(
         <section className="backgrade pb-5">

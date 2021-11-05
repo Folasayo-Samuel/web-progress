@@ -7,21 +7,21 @@ import Features from '../../component/features/features';
 import Subfooter from '../../component/sub-footer/subfooter';
 const Homepage = () => {
   return (
-    <div>
+    <>
       <div className="Top">
         <div className=" container">
           <Navbar />
           <div className="plan">
-            <h1>
+            <h1 className="info">
               Plan against tomorrow, by allowing us protect your interest.
             </h1>
-            <p>Check if you are insurable here?</p>
+            <p className="mt-4">Check if you are insurable here?</p>
           </div>
           <div className="top-btn mt-3">
-            <button className="btn btn-outline-danger hmm">
-              Check Insurability <i class="fas fa-arrow-right"></i>
+            <button className="btn btn-outline-danger hmm ">
+              Check Insurability <i class="fas fa-arrow-right mt-2"></i>
             </button>
-            <button className="btn btn-outline-dark btn-get">
+            <button className="btn hmm-reverse btn-get mt-2">
               Get started
             </button>
           </div>
@@ -33,7 +33,7 @@ const Homepage = () => {
       <Proposition />
       <Features />
       <Subfooter />
-    </div>
+    </>
   );
 };
 

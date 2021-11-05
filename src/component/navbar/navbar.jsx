@@ -1,11 +1,15 @@
+import { BrowserRouter, NavLink } from "react-router-dom";
+import Button from "../Button/Button"
+import logo from "../../assest/images/logo-black.png"
+
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light ">
+    <BrowserRouter>
+      <nav className="navbar navbar-expand-lg navbar-light pt-4 ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink  className="navbar-brand" to="#">
             <img src="./Image/logo.jpg" alt="Logo" style={{width: "70px"}} />
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,126 +24,131 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+                <NavLink 
+                  className="nav-link dropdown-toggle pl-2"
+                 to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Products
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <NavLink  class="dropdown-item" to="#">
                       Another action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Something else here
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <NavLink 
                   className="nav-link dropdown-toggle"
-                  href="#"
+                 to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Renew Your Policy
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <NavLink  class="dropdown-item" to="#">
                       Another action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Something else here
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li className="nav-item pl-2">
+                <NavLink  className="nav-link" to="#">
                   File a Claim
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <NavLink 
                   className="nav-link dropdown-toggle"
-                  href="#"
+                 to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Contact Us
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <NavLink  class="dropdown-item" to="#">
                       Another action
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink  className="dropdown-item" to="#">
                       Something else here
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li className="nav-item pl-2">
+                <NavLink  className="nav-link" to="#">
                   Become a Partner
-                </a>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Cart <i className="fas fa-shopping-bag"></i>
-                </a>
+              <li className="nav-item pl-2">
+                <NavLink  className="nav-link" to="#">
+                  Cart <i className="fas fa-shopping-bag px-2"></i>
+                </NavLink>
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-success login" type="submit">
+              {/* <button className="btn btn-outline-success login  " type="submit">
                 Login
-              </button>
+              </button> */}
+
+              <Button className="login" >
+                Login
+              </Button>
+              
             </form>
           </div>
         </div>
       </nav>
-    </div>
+    </BrowserRouter>
   );
 };
 

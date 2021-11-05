@@ -1,4 +1,4 @@
-import propPic from '../../component/proposition/prop_image/Three.jpg';
+import propPic from '../../component/proposition/prop_image/Three.png';
 const Proposition = () => {
   return (
 <section className="background">
