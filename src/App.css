@@ -8,8 +8,12 @@
 body {
   font-family: Roboto;
 }
+.resImg {
+  max-width: 100%;
+  width: 100%;
+}
 .navbar-nav {
-  margin-left: 100px !important; 
+  margin-left: 100px !important;
 }
 .login {
   background-color: transparent;
@@ -57,8 +61,8 @@ body {
   color: #fff !important;
   border-radius: 8px;
   background-color: #e62e4e;
-    margin-right: 1rem;
-  padding: .9rem 1.2rem;
+  margin-right: 1rem;
+  padding: 0.9rem 1.2rem;
 }
 .hmm i {
   display: inline-block;
@@ -85,7 +89,7 @@ body {
 }
 .partner-section {
   background-color: #faf8f8;
-  padding-top: 2rem;
+  padding: 3rem;
 }
 .partner-imgs {
   width: 100%;
@@ -105,36 +109,49 @@ body {
 }
 
 .cardtwo {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 12px;
+  height: 100%;
+  position: relative;
+  margin-top: 1rem;
 }
 .cardtwo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 .containertwo {
-  padding: 2px 16px;
+  /* padding: 2px 16px; */
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 2rem; */
+}
+.card-img {
+  width: 100%;
+  height: 100px;
+}
+.stand {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  width: 7rem;
+  height: 7.6rem;
+  margin: auto;
+  padding: 10px 0px;
+  color: white;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .standOne {
   background-color: #e62e4e;
-  border-radius: 5px;
-  width: 34%;
-  margin: auto;
-  padding: 10px 0px;
-  color: white;
-  font-size: 3vw !important;
-  text-align: center !important;
 }
 .standTwo {
   background-color: #1462c9;
-  border-radius: 5px;
-  width: 34%;
-  margin: auto;
-  padding: 10px 0px;
-  margin-top: 0 !important;
-  color: white;
-  font-size: 3vw !important;
-  text-align: center !important;
 }
 .arrow {
   color: #e62e4e;
@@ -142,36 +159,87 @@ body {
 }
 .standThree {
   background-color: #22d112;
-  border-radius: 5px;
-  width: 34%;
-  margin: auto;
-  padding: 10px 0px;
-  color: white;
-  font-size: 3vw !important;
-  text-align: center !important;
+}
+.row h6 {
+  font-family: Roboto;
+  font-weight: 700;
+  color: #2d2c4c;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.list {
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+}
+.optionBox i {
+  display: inline-block;
+  padding-right: 1rem;
 }
 .list li {
   list-style-type: none;
 }
-.card-img {
-  width: 100%;
-  margin: auto;
+.listone {
+  padding: 0;
+  margin: 0;
+}
+.listone span {
+  display: inline-block;
 }
 .listone li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+}
+.listone .text {
+  /* width: 200px; */
+  line-height: 1.3rem;
+}
+
+.listone .iconBox {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #2f3f49;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+.listtwo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.listtwo .iconBox {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #2f3f49;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.above{
+  z-index: 4;
 }
 .listtwo li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 .background {
   background-color: #efdee5;
+  margin-top: 3rem;
+  /* clip-path: circle(200vh at 50% -20vh); */
 }
-.rad {
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 50%;
-}
+
 .Inss {
   color: #fff;
   border-bottom: 3px solid #fff;
@@ -228,6 +296,16 @@ body {
     margin-left: 0;
     padding: 0.5rem 3.6rem;
   }
+
+  .cardtwo {
+    box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 12px;
+    height: 100%;
+    position: relative;
+    /* margin-top: 1rem; */
+  }
+
   /* .stand{
     height: 100px;
     display: flex;
