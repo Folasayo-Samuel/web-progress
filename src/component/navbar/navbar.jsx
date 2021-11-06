@@ -1,14 +1,15 @@
 import { BrowserRouter, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
-import logo from "../../assest/images/logo-black.png";
+import lightLogo from "../../assest/images/logo-white.png";
+import darkLogo from "../../assest/images/logo-black.png";
 
-const Navbar = () => {
+const Navbar = ({ img }) => {
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light pt-4 ">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} />
+            <img src={img ? lightLogo : darkLogo} alt="logo" />
           </NavLink>
           <button
             className="navbar-toggler"

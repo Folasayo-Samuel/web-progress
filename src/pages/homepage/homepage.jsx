@@ -1,16 +1,16 @@
-import Navbar from "../../component/navbar/navbar";
+import Navbar from "../../component/navbar/Navbar";
 import Partners from "../../component/partners/partners";
 import InsureSlide from "../../component/insure-slide/insure-slide";
 import Products from "../../component/products/card";
-import Proposition from '../../component/proposition/proposition';
-import Features from '../../component/features/features';
-import Subfooter from '../../component/sub-footer/subfooter';
+import Proposition from "../../component/proposition/proposition";
+import Features from "../../component/features/features";
+import Subfooter from "../../component/sub-footer/subfooter";
 const Homepage = () => {
   return (
     <>
       <div className="Top">
         <div className=" container">
-          <Navbar />
+          <Navbar img={true} />
           <div className="plan">
             <h1 className="info">
               Plan against tomorrow, by allowing us protect your interest.
@@ -18,7 +18,7 @@ const Homepage = () => {
             <p className="mt-4">Check if you are insurable here?</p>
           </div>
           <div className="top-btn mt-3">
-            <button className="btn btn-outline-danger hmm ">
+            <button className="btn btn-outline-danger hmm mt-2 ">
               Check Insurability <i class="fas fa-arrow-right mt-2"></i>
             </button>
             <button className="btn hmm-reverse btn-get mt-2">
