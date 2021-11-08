@@ -6,9 +6,9 @@ const Proposition = () => {
         <h2 className="pb-4 pt-4">
           <span className="Ins">Value</span> proposition
         </h2>
-        <div className="row  ">
-          <div className="col-sm-12 col-md-4  text-left mt-5">
-            <ul className="listone list">
+        <div className="row ">
+          <div className="col-sm-12 col-md-4  text-left">
+            <ul className="listone">
               <li className="pb-5">
                 <span className="iconBox">
                   <i className="fas fa-money-check-alt fa-1x radone"></i>
@@ -43,10 +43,10 @@ const Proposition = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12 col-md-4   text-center ">
-            <img src={propPic} alt="Phone" style={{ width: "65%" }} />
+          <div className="col-sm-12 col-md-3 d-flex justify-content-start text-center ">
+            <img src={propPic} alt="Phone" style={{ width: "85%" ,  }} />
           </div>
-          <div className="col-sm-12 col-md-4   mt-5 ">
+          <div className="col-sm-12 col-md-4 ">
             <ul className="listtwo list">
               <li className="pb-5">
                 <span>Real time Tracking and monitoring your claims </span>
