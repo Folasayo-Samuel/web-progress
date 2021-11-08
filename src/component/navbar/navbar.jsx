@@ -15,12 +15,12 @@ const Navbar = ({ dark }) => {
       >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            <img
-              src={dark ? "darkLogo" : "lightLogo"}
+            {/* <img
+              src={dark ? { darkLogo } : { lightLogo }}
               alt="logo"
               width="200px"
-            />
-            {/* <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} /> */}
+            /> */}
+            <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} />
           </NavLink>
           <button
             className="navbar-toggler"

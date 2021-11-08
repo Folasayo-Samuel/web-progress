@@ -66,7 +66,14 @@ const NewsLetter = () => {
             </p>
 
             <p>
-              <textarea name="sms" onChange={handleChange} value={sms}></textarea>
+              <textarea
+                name="sms"
+                onChange={handleChange}
+                value={sms}
+              ></textarea>
+            </p>
+            <p>
+              <button className="login">Submit</button>
             </p>
           </form>
         </div>

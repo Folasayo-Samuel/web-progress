@@ -7,6 +7,7 @@ import Features from "../../component/features/Features";
 import Subfooter from "../../component/sub-footer/Subfooter";
 import Faq from "../../component/Faq/Faq";
 import NewsLetter from "../../component/NewsLetter/NewsLetter";
+import { FaArrowRight } from "react-icons/fa";
 const Homepage = () => {
   return (
     <>
@@ -21,8 +22,8 @@ const Homepage = () => {
           </div>
           <div className="top-btn mt-3">
             <button className="btn btn-outline-danger hmm mt-2 ">
-              Check Insurability <i className="fas fa-arrow-right mt-2"></i>
-            </button>
+              Check Insurability <FaArrowRight />
+             </button>
             <button className="btn hmm-reverse btn-get mt-2">
               Get started
             </button>
