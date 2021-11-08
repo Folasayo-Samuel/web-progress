@@ -2,7 +2,7 @@ import FormNavbar from '../../../component/formnavbar/FormNavbar';
 import React, { useState } from "react";
 // import { useState } from "react";
 
-const AccidentRegister = () => {
+const Register = () => {
   
   const initialDetails = {
     fullName: "",
@@ -45,14 +45,14 @@ const AccidentRegister = () => {
     <div className="container chang">
       <form onSubmit={handleSubmit} className="bordsha">
         <div className="row">
-          <h2 className="text-center pt-3">Place cover on Per<span className="Ins">sonal Ac</span>cident Insurance</h2>
+          <h2 className="text-center pt-3">Place <span className="Ins">cover on</span> Gadget</h2>
 
         <div className="col">
         <label htmlFor="Full Name" className="pt-4">
           Full Name <br />
           <input
             type="text"
-            name="fullName"
+            name="full-Name"
             value={fullName}
             onChange={handleChange}
             placeholder="Enter Your Name"
@@ -146,4 +146,4 @@ const AccidentRegister = () => {
   );
 };
 
-export default AccidentRegister;
+export default Register;
