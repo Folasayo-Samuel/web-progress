@@ -1,6 +1,7 @@
 import { BrowserRouter, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
-import logo from "../../assest/images/logo-black.png";
+import lightLogo from "../../assest/images/logo-white.png";
+import darkLogo from "../../assest/images/logo-black.png";
 
 const Navbar = ({ dark }) => {
   return (
@@ -14,7 +15,12 @@ const Navbar = ({ dark }) => {
       >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            <img src={dark ? 'darkLogo' : 'lightLogo'} alt="logo" width="200px" />
+            <img
+              src={dark ? "darkLogo" : "lightLogo"}
+              alt="logo"
+              width="200px"
+            />
+            {/* <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} /> */}
           </NavLink>
           <button
             className="navbar-toggler"

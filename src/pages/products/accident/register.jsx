@@ -1,4 +1,5 @@
 import FormNavbar from "../../../component/formnavbar/FormNavbar";
+import Nav from "../../../component/navbar/Navbar";
 import React, { useState } from "react";
 // import { useState } from "react";
 
@@ -37,10 +38,12 @@ const AccidentRegister = () => {
   } = userDetails;
   return (
     <>
-      <div className="navcolor">
-        <FormNavbar />
-      </div>{" "}
-      <br />
+      {/* <div className="navcolor">
+    <FormNavbar />
+    </div> <br /> */}
+      <div className="container">
+        <Nav dark={true} />
+      </div>
       <div className="container chang">
         <form onSubmit={handleSubmit} className="bordsha">
           <div className="row">

@@ -56,6 +56,28 @@ html {
   border: 1px solid #000 !important;
 }
 
+.logintwo:hover {
+  color: #fff !important;
+  background-color: #e62e4e;
+  border: none !important;
+  outline-color: #000 !important;
+}
+.loginthree:hover {
+  color: #fff !important;
+  background-color: #e62e4e;
+  border: none !important;
+  outline-color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+.nav-linktwo {
+  color: #000 !important;
+}
+.co {
+  color: #e62e4e;
+}
 .Top {
   background-image: url("./assest/images/Background.jpg");
   background-size: cover;
