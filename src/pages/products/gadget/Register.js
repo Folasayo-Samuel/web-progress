@@ -52,7 +52,7 @@ const Register = () => {
           Full Name <br />
           <input
             type="text"
-            name="full-Name"
+            name="fullName"
             value={fullName}
             onChange={handleChange}
             placeholder="Enter Your Name"
