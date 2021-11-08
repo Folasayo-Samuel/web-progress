@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Nav from "../../../component/navbar/Navbar";
 // import { useState } from "react";
 
 const Register = () => {
@@ -38,6 +39,7 @@ const Register = () => {
   } = userDetails;
   return (
     <>
+    <Nav dark={true} />
       <form onSubmit={handleSubmit}>
         <label htmlFor="Full Name">
           Full Name

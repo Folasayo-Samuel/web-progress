@@ -3,13 +3,19 @@ import Button from "../Button/Button";
 import lightLogo from "../../assest/images/logo-white.png";
 import darkLogo from "../../assest/images/logo-black.png";
 
-const Navbar = ({ img }) => {
+const Navbar = ({ dark }) => {
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand-lg navbar-light pt-4 ">
+      <nav
+        className={
+          dark
+            ? "navbar navbar-expand-lg navbar-light pt-4 "
+            : "navbar navbar-expand-lg navbar-dark pt-4 "
+        }
+      >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            <img src={img ? lightLogo : darkLogo} alt="logo" />
+            <img src={dark ? darkLogo : lightLogo} alt="logo" width="200px" />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -42,7 +48,7 @@ const Navbar = ({ img }) => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#">
+                    <NavLink className="dropdown-item" to="#">
                       Another action
                     </NavLink>
                   </li>
@@ -74,7 +80,7 @@ const Navbar = ({ img }) => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#">
+                    <NavLink className="dropdown-item" to="#">
                       Another action
                     </NavLink>
                   </li>
@@ -111,7 +117,7 @@ const Navbar = ({ img }) => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#">
+                    <NavLink className="dropdown-item" to="#">
                       Another action
                     </NavLink>
                   </li>
@@ -141,8 +147,8 @@ const Navbar = ({ img }) => {
                 Login
               </button> */}
 
-              <NavLink to="/login" className="above">
-                <Button className="login">Login</Button>
+              <NavLink to="/login">
+                <Button className={dark ? "login-dark" : "login"}>Login</Button>
               </NavLink>
             </form>
           </div>
