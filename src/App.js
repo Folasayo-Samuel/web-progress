@@ -1,14 +1,13 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import './fontawesome';
-import Homepage from "./pages/homepage/homepage";
+// import "./Fontawesome";
+import Homepage from "./pages/homepage/Homepage";
 import "./App.css";
 import Register from "./pages/products/gadget/Register";
 import Comprehensive from "./pages/products/motor/Comprehensive";
-import Thirdpartyform from "./pages/products/thirdparty/register";
-import AccidentRegister from "./pages/products/accident/register";
-import GadgetInsurance from "./pages/products/gadget/gadget";
-
+import Thirdpartyform from "./pages/products/thirdparty/Register";
+import AccidentRegister from "./pages/products/accident/Register";
+import GadgetInsurance from "./pages/products/gadget/Gadget";
 
 const App = () => {
   return (

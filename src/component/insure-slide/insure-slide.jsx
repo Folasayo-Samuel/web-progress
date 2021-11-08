@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BootstrapCarouselComponent from '../../component/carousel/carousel';
+import BootstrapCarouselComponent from '../carousel/Carousel';
 
 
 const InsureSlide = () => {

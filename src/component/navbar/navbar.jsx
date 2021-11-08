@@ -14,7 +14,7 @@ const Navbar = ({ dark }) => {
       >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            <img src={dark ? darkLogo : lightLogo} alt="logo" width="200px" />
+            <img src={dark ? 'darkLogo' : 'lightLogo'} alt="logo" width="200px" />
           </NavLink>
           <button
             className="navbar-toggler"
