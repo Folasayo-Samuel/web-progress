@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAndroid, FaApple, FaAppleAlt } from "react-icons/fa";
+import { FaAndroid, FaApple } from "react-icons/fa";
 const Subfooter = () => {
   return (
     <section className="backy">

@@ -188,9 +188,6 @@ html {
   background-color: #faf8f8;
   text-align: center;
 }
-.chang input {
-  width: 100%;
-}
 .navcolor {
   color: #000 !important;
 }
@@ -205,7 +202,25 @@ html {
 .cardtwo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
+.spacebottom{
+  padding-bottom: 15px;
+}
+.designx li{
+  list-style-type: none;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+.designx .lister::before{
+  content: "X";
+  color: #f82c4e;
+  display: inline-block;
+  font-weight: bold;
+  width: 1em;
+  margin-left: -1em;
+}
+.alphbetic li{
+  list-style-type: lower-alpha;
+}
 .containertwo {
   /* padding: 2px 16px; */
   display: flex;
@@ -215,6 +230,49 @@ html {
 .card-img {
   width: 100%;
   height: 100px;
+}
+.bgcolour{
+  background-image: linear-gradient(180deg,#523152, #522d4a, #6b1031, #7b0021);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.BgShadows{
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 1px 4px 6px #000;
+  text-align: center;
+}
+.BgShadows img{
+  width: 70% !important;
+}
+.PaddingTop{
+  margin-top: 20px;
+}
+.marginTopDeal{
+  margin-top: 15px;
+}
+.styleTypeEdit li{
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+.styleTypeEdit .iconsCss::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f058";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #22d112;
+}
+.colorwhyte{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+.colourwhite li{
+  color: #fff;
+  padding-bottom: 15px;
 }
 .stand {
   position: absolute;
@@ -467,7 +525,6 @@ html {
 .new_shadow {
   box-shadow: 0px 0px 1px #2f3f49;
 }
-
 @media screen and (max-width: 920px) {
   .navbar-nav {
     margin-left: 0px !important;
@@ -493,6 +550,9 @@ html {
   .hmm-reverse {
     margin-left: 0;
     padding: 0.5rem 3.6rem;
+  }
+  .PaddingTop{
+    margin-right: 20px;
   }
 
   .cardtwo {

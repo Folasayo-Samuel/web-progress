@@ -3,7 +3,12 @@ import EightPics from "../../../assest/images/Eight.png";
 // import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
 import { BrowserRouter, Link } from "react-router-dom";
 import Button from "../../../component/Button/Button";
-import { FaCheckCircle, FaGripLines, FaShieldAlt } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
+import {AiOutlineCheckCircle, AiOutlineLine } from "react-icons/ai";
+import Exclusions from './Exclusion';
+import MakeClaim from './Claim'
+import Subfooter from '../../../component/sub-footer/Subfooter';
+import TermsCondition from './TermsCon';
 
 const GadgetInsurance = () => {
   return (
@@ -59,9 +64,7 @@ const GadgetInsurance = () => {
           <div className="col-sm">
             <img
               src={EightPics}
-              alt="apple gadget"
-              style={{ width: "100%", height: "auto" }}
-            />
+              alt="apple gadget"/>
           </div>
         </div>
 
@@ -71,7 +74,7 @@ const GadgetInsurance = () => {
             <span className="co">
               Cover
               {/* <FontAwesomeIcon icon={["fas", "grip-lines"]} /> */}
-              <FaGripLines />
+              <AiOutlineLine />
             </span>
           </h3>
           <p className="text-center pb-4">
@@ -82,20 +85,24 @@ const GadgetInsurance = () => {
         <div className="row text-center">
           <div className="col">
             {/* <FontAwesomeIcon icon={["far", "fa-check-circle"]} /> */}
-            <FaCheckCircle />
+            <AiOutlineCheckCircle />
             <p>Material Damages including screens, panels and motherboard</p>
           </div>
           <div className="col">
             {/* <FontAwesomeIcon icon={["far", "fa-check-circle"]} fixedWidth /> */}
-            <FaCheckCircle />
+            <AiOutlineCheckCircle />
             <p>Fire, Flood, storm and other insured perils.</p>
           </div>
           <div className="col">
             {/* <FontAwesomeIcon icon={["far", "fa-check-circle"]} fixedWidth /> */}
-            <FaCheckCircle /> 
+            <AiOutlineCheckCircle /> 
             <p>Theft/burglary</p>
           </div>
         </div>
+        <Exclusions /> 
+        <MakeClaim />  
+        <Subfooter /> 
+        <TermsCondition />    
       </div>
     </div>
   );

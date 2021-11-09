@@ -1,6 +1,6 @@
 import FormNavbar from "../../../component/formnavbar/FormNavbar";
 import React, { useState } from "react";
-import Nav from "../../../component/navbar/Navbar";
+//import Nav from "../../../component/navbar/Navbar";
 // import { useState } from "react";
 
 const Register = () => {
