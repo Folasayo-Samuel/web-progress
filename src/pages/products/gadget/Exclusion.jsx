@@ -13,8 +13,8 @@ const Exclusions = () => {
           </h3>
         </div>
         <div className="row">
-            <div className="col">
-                <img src= { ExclusionPic } alt="ExclusionPics" style={{height: 'auto'}} />
+            <div className="col-sm">
+                <img src= { ExclusionPic } alt="ExclusionPics" style={{height: 'auto', width: '100%'}} />
             </div>
             <div className="col">
                 <ul className="designx">

@@ -6,6 +6,9 @@ import Button from "../../../component/Button/Button";
 import { FaShieldAlt } from "react-icons/fa";
 import {AiOutlineCheckCircle, AiOutlineLine } from "react-icons/ai";
 import Exclusions from './Exclusion';
+import MakeClaim from './Claim'
+import Subfooter from '../../../component/sub-footer/Subfooter';
+import TermsCondition from './TermsCon';
 
 const GadgetInsurance = () => {
   return (
@@ -61,9 +64,7 @@ const GadgetInsurance = () => {
           <div className="col-sm">
             <img
               src={EightPics}
-              alt="apple gadget"
-              style={{ width: "100%", height: "auto" }}
-            />
+              alt="apple gadget"/>
           </div>
         </div>
 
@@ -98,7 +99,10 @@ const GadgetInsurance = () => {
             <p>Theft/burglary</p>
           </div>
         </div>
-        <Exclusions />        
+        <Exclusions /> 
+        <MakeClaim />  
+        <Subfooter /> 
+        <TermsCondition />    
       </div>
     </div>
   );
