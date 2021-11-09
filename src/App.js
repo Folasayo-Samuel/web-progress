@@ -8,6 +8,9 @@ import Comprehensive from "./pages/products/motor/Comprehensive";
 import Thirdpartyform from "./pages/products/thirdparty/Register";
 import AccidentRegister from "./pages/products/accident/Register";
 import GadgetInsurance from "./pages/products/gadget/Gadget";
+import ComContents from "./pages/products/motor/ComContent";
+import AccidentContent from "./pages/products/accident/AccidentContent";
+
 
 const App = () => {
   return (
@@ -34,6 +37,14 @@ const App = () => {
         <Route path="/gadgetinsurance">
           {/**Gadget Insurance */}
           <GadgetInsurance />
+        </Route>
+        <Route path="/comprehensivecontents">
+          {/**Comprehensive Motor Insurance */}
+          <ComContents />
+        </Route>
+        <Route path="/personalacc">
+          {/**Personal Accident Insurance */}
+          <AccidentContent />
         </Route>
       </Switch>
     </BrowserRouter>
