@@ -1,15 +1,15 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import './fontawesome';
-import Homepage from "./pages/homepage/homepage";
-import GadgetForm from "./pages/products/gadget/Register";
-import "./App.css";
-import Register from "./pages/products/gadget/Register";
-import Comprehensive from "./pages/products/motor/Comprehensive";
-import Thirdpartyform from "./pages/products/thirdparty/register";
-import AccidentRegister from "./pages/products/accident/register";
-import GadgetInsurance from "./pages/products/gadget/gadget";
-
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+// import './fontawesome';
+import Homepage from './pages/homepage/homepage'
+import GadgetForm from './pages/products/gadget/Register'
+import './App.css'
+import Register from './pages/products/gadget/Register'
+import Comprehensive from './pages/products/motor/Comprehensive'
+import Thirdpartyform from './pages/products/thirdparty/register'
+import AccidentRegister from './pages/products/accident/register'
+import GadgetInsurance from './pages/products/gadget/gadget'
+import Dashboard from './pages/dashboard'
 
 const App = () => {
   return (
@@ -38,9 +38,12 @@ const App = () => {
           {/**Gadget Insurance */}
           <GadgetInsurance />
         </Route>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
       </Switch>
     </BrowserRouter>
-  );
-};
+  )
+}
 
-export default App;
+export default App

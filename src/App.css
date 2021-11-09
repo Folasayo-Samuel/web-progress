@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #ff0652;
+}
 
 * {
   box-sizing: border-box;
@@ -7,7 +11,25 @@
 }
 body {
   font-family: Roboto;
+  background: #fafbfc;
+  overflow-x: hidden;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
 .resImg {
   max-width: 100%;
   width: 100%;
@@ -15,7 +37,7 @@ body {
 .navbar-nav {
   margin-left: 100px !important;
 }
-.gadget-nav{
+.gadget-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +56,7 @@ body {
   border-radius: 7px !important;
   border: 1px solid #000 !important;
 }
-.loginthree{
+.loginthree {
   background-color: #e62e4e;
   padding: 0.4rem 2.5rem;
   color: #fff !important;
@@ -47,7 +69,7 @@ body {
   border: none !important;
   outline-color: #fff !important;
 }
-.logintwo:hover{
+.logintwo:hover {
   color: #fff !important;
   background-color: #e62e4e;
   border: none !important;
@@ -63,14 +85,14 @@ body {
 .nav-link {
   color: #fff !important;
 }
-.nav-linktwo{
+.nav-linktwo {
   color: #000 !important;
 }
-.co{
+.co {
   color: #e62e4e;
 }
 .Top {
-  background-image: url("./assest/images/Background.jpg");
+  background-image: url('./assest/images/Background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +124,7 @@ body {
   margin-right: 1rem;
   padding: 0.9rem 1.2rem;
 }
-.cha{
+.cha {
   color: #fff !important;
   background-color: #000 !important;
   border-radius: none !important;
@@ -150,7 +172,7 @@ body {
   border-bottom: 3px solid #f82c4e;
   padding-top: 20px;
 }
-.submitone{
+.submitone {
   color: #fff;
   background-color: #f82c4e;
   border: none;
@@ -159,12 +181,12 @@ body {
   padding-left: 35px;
   padding-right: 35px;
 }
-.submitone:hover{
+.submitone:hover {
   background-color: transparent;
   color: #000;
   border: 1px solid #000;
 }
-.bordsha{
+.bordsha {
   background-color: #fff;
   border: 2px solid #fff;
   display: inline-block;
@@ -175,14 +197,15 @@ body {
   text-align: left;
   box-shadow: 10px 10px 10px 10px #888888;
 }
-.chang{
+
+.chang {
   background-color: #faf8f8;
   text-align: center;
 }
-.chang input{
+.chang input {
   width: 100%;
 }
-.navcolor{
+.navcolor {
   color: #000 !important;
 }
 .cardtwo {
@@ -337,14 +360,18 @@ body {
     #d52a44,
     #b72338,
     #b72338
-    );
-  }
-  .light {
-    color: #fff;
-  }
-  .righttwo {
-    margin-top: -150px;
-  }
+  );
+}
+.light {
+  color: #fff;
+}
+// WTF??? Bad name
+
+.righttwo {
+  margin-top: -150px;
+}
+// WTF??? Bad name
+
 .sub {
   color: #fff;
 }
@@ -355,10 +382,14 @@ body {
   .navbar-nav {
     margin-left: 0px !important;
   }
+  // WTF??? Bad name
+
   .Top {
     height: 80vh;
     width: 100%;
   }
+  // WTF??? Bad name
+
   .plan {
     width: 100%;
     margin-top: 70px;
@@ -370,14 +401,17 @@ body {
   .info {
     font-size: 1.9rem;
   }
+  // WTF??? Bad name
   .hmm {
     padding: 0.5rem 1rem;
   }
+
+  // WTF??? Bad name
   .hmm-reverse {
     margin-left: 0;
     padding: 0.5rem 3.6rem;
   }
-
+  // WTF??? Bad name
   .cardtwo {
     box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.1);
     transition: 0.3s;
