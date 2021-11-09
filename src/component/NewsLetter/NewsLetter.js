@@ -12,8 +12,12 @@ const NewsLetter = () => {
     const { value, name } = e.target;
     setSmsDetails({ ...smsDetails, [name]: value });
   };
-
-  const { email, sms, name } = smsDetails;
+  const handlesubmit = (e) =>{
+    e.preventDefault()
+    console.log(smsDetails);
+  }
+  
+    const { email, sms, name } = smsDetails;
 
   return (
     <div className="container-fluid p-5 newsletter ">
