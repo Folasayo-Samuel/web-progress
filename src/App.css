@@ -188,9 +188,6 @@ html {
   background-color: #faf8f8;
   text-align: center;
 }
-.chang input {
-  width: 100%;
-}
 .navcolor {
   color: #000 !important;
 }
@@ -205,7 +202,25 @@ html {
 .cardtwo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
+.spacebottom{
+  padding-bottom: 15px;
+}
+.designx li{
+  list-style-type: none;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+.designx .lister::before{
+  content: "X";
+  color: #f82c4e;
+  display: inline-block;
+  font-weight: bold;
+  width: 1em;
+  margin-left: -1em;
+}
+.alphbetic li{
+  list-style-type: lower-alpha;
+}
 .containertwo {
   /* padding: 2px 16px; */
   display: flex;
