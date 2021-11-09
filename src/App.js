@@ -10,7 +10,7 @@ import AccidentRegister from "./pages/products/accident/Register";
 import GadgetInsurance from "./pages/products/gadget/Gadget";
 import ComContents from "./pages/products/motor/ComContent";
 import AccidentContent from "./pages/products/accident/AccidentContent";
-
+import PartyContents from "./pages/products/thirdparty/PartyContents";
 
 const App = () => {
   return (
@@ -42,9 +42,12 @@ const App = () => {
           {/**Comprehensive Motor Insurance */}
           <ComContents />
         </Route>
-        <Route path="/personalacc">
+        <Route path="/personalaccident">
           {/**Personal Accident Insurance */}
           <AccidentContent />
+        </Route>
+        <Route path="/thirdpartycontent">
+          <PartyContents />
         </Route>
       </Switch>
     </BrowserRouter>
