@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: Roboto;
   /* border: 1px solid red; */
 }
 html {
@@ -202,15 +203,15 @@ html {
 .cardtwo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.spacebottom{
+.spacebottom {
   padding-bottom: 15px;
 }
-.designx li{
+.designx li {
   list-style-type: none;
   padding-bottom: 15px;
   padding-left: 10px;
 }
-.designx .lister::before{
+.designx .lister::before {
   content: "X";
   color: #f82c4e;
   display: inline-block;
@@ -218,7 +219,7 @@ html {
   width: 1em;
   margin-left: -1em;
 }
-.alphbetic li{
+.alphbetic li {
   list-style-type: lower-alpha;
 }
 .containertwo {
@@ -231,32 +232,32 @@ html {
   width: 100%;
   height: 100px;
 }
-.bgcolour{
-  background-image: linear-gradient(180deg,#523152, #522d4a, #6b1031, #7b0021);
+.bgcolour {
+  background-image: linear-gradient(180deg, #523152, #522d4a, #6b1031, #7b0021);
   margin-bottom: 20px;
   padding-bottom: 15px;
 }
-.BgShadows{
+.BgShadows {
   border: 5px solid #fff;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 1px 4px 6px #000;
   text-align: center;
 }
-.BgShadows img{
+.BgShadows img {
   width: 70% !important;
 }
-.PaddingTop{
+.PaddingTop {
   margin-top: 20px;
 }
-.marginTopDeal{
+.marginTopDeal {
   margin-top: 15px;
 }
-.styleTypeEdit li{
+.styleTypeEdit li {
   list-style-type: none;
   padding-bottom: 15px;
 }
-.styleTypeEdit .iconsCss::before{
+.styleTypeEdit .iconsCss::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f058";
@@ -265,12 +266,12 @@ html {
   margin-left: -1em;
   color: #22d112;
 }
-.colorwhyte{
+.colorwhyte {
   padding-top: 40px;
   padding-bottom: 40px;
   color: #fff;
 }
-.colourwhite li{
+.colourwhite li {
   color: #fff;
   padding-bottom: 15px;
 }
@@ -519,12 +520,167 @@ html {
 .newsletter {
   margin-top: 3rem;
 }
+.newsletter form {
+  width: 80%;
+}
+.newsletter input {
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  outline: none !important;
+  box-shadow: none !important;
+}
 .news {
-  padding: 3rem;
+  padding: 2rem 4rem;
 }
 .new_shadow {
   box-shadow: 0px 0px 1px #2f3f49;
 }
+.textarea {
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+  border: 1px solid #e4e4ec;
+}
+.colored {
+  color: #b72338;
+}
+.newsText {
+  width: 300px;
+}
+.submit_btn {
+  border: none;
+  background-color: #d52a44;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.7rem 4rem;
+}
+
+/* live chat style  */
+
+.livechat {
+  position: relative;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px #888888;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.livechat h4 {
+  font-size: 1.2rem;
+}
+.livechat .close {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #9e1c30;
+}
+
+.livechat .user_img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+.livechat .user_img img {
+  /* max-width: 100%; */
+  width: 100%;
+  object-fit: cover;
+}
+/* chat box  */
+
+.chat_box {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.relative {
+  position: relative;
+}
+/* Chat style  */
+.chat {
+  display: flex;
+  align-items: center;
+  margin: 1.3rem 0;
+  max-width: 300px;
+  width: 300px;
+}
+.chat .text {
+  box-shadow: 0px 0px 7px #888888;
+  min-width: 120px;
+
+  padding: 0.2rem 0.7rem;
+}
+.chatform {
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  /* height: 2rem; */
+}
+.chatform input {
+  width: 100%;
+  padding: 1px 1rem;
+  border: 1px solid #b5b5b5;
+  margin-bottom: 0;
+}
+.chatform span {
+  /* display: inline-block; */
+  position: absolute;
+  right: 1rem;
+}
+.chatform input::placeholder {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.footer {
+  background-color: #2d2c4c;
+  color: #fff;
+  padding: 4rem 1px 1px;
+}
+.footer_links {
+  padding: 0;
+  margin: 0;
+}
+.footer_links li {
+  list-style-type: none;
+  margin: 0.5rem 0;
+}
+.footer_links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.footer_links h5 {
+  font-weight: bolder !important;
+}
+/* PAYENT METHOD  */
+.payment {
+  border-top: 1px solid #fff;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+.pay p a {
+  font-size: 1.5rem;
+  color: #fff;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+.pay h5 {
+  margin: 0;
+}
+.privacy {
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 920px) {
   .navbar-nav {
     margin-left: 0px !important;
@@ -551,7 +707,7 @@ html {
     margin-left: 0;
     padding: 0.5rem 3.6rem;
   }
-  .PaddingTop{
+  .PaddingTop {
     margin-right: 20px;
   }
 
@@ -562,6 +718,9 @@ html {
     height: 100%;
     position: relative;
     /* margin-top: 1rem; */
+  }
+  .newsletter form {
+    width: 100%;
   }
 }
 
@@ -576,6 +735,22 @@ html {
     margin-top: 0;
   }
   .faq_content {
+    width: 100%;
+  }
+  .newsletter form {
+    width: 100%;
+  }
+
+  .newsletter small {
+    width: 100%;
+  }
+  .news {
+    padding: 2rem 1rem;
+  }
+  .newsletter {
+    width: 100%;
+  }
+  .newsText {
     width: 100%;
   }
 }

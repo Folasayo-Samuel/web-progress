@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import "./Fontawesome";
-import Homepage from "./pages/homepage/homepage";
+import Homepage from "./pages/homepage/Homepage";
 import "./App.css";
 import Register from "./pages/products/gadget/Register";
 import Comprehensive from "./pages/products/motor/Comprehensive";
