@@ -1,8 +1,7 @@
 import { BrowserRouter, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 
-
-const GadgetNavbar = () => {
+const ComInsNav = () => {
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light pt-4 gadget-nav">
@@ -140,7 +139,7 @@ const GadgetNavbar = () => {
                 Login
               </button> */}
 
-              <NavLink to="/login" className="above">
+              <NavLink to="/register" className="above">
                 <Button className="loginthree">Sign in</Button>
               </NavLink>
             </form>
@@ -151,4 +150,4 @@ const GadgetNavbar = () => {
   );
 };
 
-export default GadgetNavbar;
+export default ComInsNav;

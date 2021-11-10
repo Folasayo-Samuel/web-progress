@@ -1,6 +1,6 @@
 import FormNavbar from '../../../component/formnavbar/FormNavbar';
 import React, { useState } from "react";
-// import { useState } from "react";
+
 
 const ComprehensiveRegister = () => {
   
