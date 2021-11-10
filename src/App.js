@@ -11,6 +11,7 @@ import GadgetInsurance from "./pages/products/gadget/Gadget";
 import ComContents from "./pages/products/motor/ComContent";
 import AccidentContent from "./pages/products/accident/AccidentContent";
 import PartyContents from "./pages/products/thirdparty/PartyContents";
+import FileClaim from "./pages/fileclaim/FileClaim";
 
 const App = () => {
   return (
@@ -48,6 +49,10 @@ const App = () => {
         </Route>
         <Route path="/thirdpartycontent">
           <PartyContents />
+        </Route>
+        <Route path="/fileclaim">
+          {/**File Claim */}
+          <FileClaim />
         </Route>
       </Switch>
     </BrowserRouter>
