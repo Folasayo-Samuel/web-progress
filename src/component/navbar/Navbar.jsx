@@ -20,7 +20,7 @@ const Navbar = ({ dark }) => {
               alt="logo"
               width="120px"
             />
-            {/* <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} /> */}
+            {/* <img src={logo} alt="Logo" style={{ width: "70px" }} /> */}
           </NavLink>
           <button
             className="navbar-toggler"

@@ -1,5 +1,6 @@
 import { BrowserRouter, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
+import logo from "../../assest/images/logo-black.png";
 
 const GadgetNavbar = () => {
   return (
@@ -11,7 +12,7 @@ const GadgetNavbar = () => {
             to="#"
             style={{ textDecoration: "none" }}
           >
-            <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} />
+            <img src={logo} alt="Logo" style={{ width: "100px" }} />
           </NavLink>
           <button
             className="navbar-toggler"

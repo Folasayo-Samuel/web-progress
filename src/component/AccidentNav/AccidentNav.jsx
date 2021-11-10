@@ -1,13 +1,18 @@
 import { BrowserRouter, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
+import logo from "../../assest/images/logo-black.png";
 
 const AccidentNav = () => {
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light pt-4 gadget-nav">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="#" style={{textDecoration: 'none'}}>
-            <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} />
+          <NavLink
+            className="navbar-brand"
+            to="#"
+            style={{ textDecoration: "none" }}
+          >
+            <img src={logo} alt="Logo" style={{ width: "70px" }} />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -30,17 +35,26 @@ const AccidentNav = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{textDecoration: 'none'}}>
+                  style={{ textDecoration: "none" }}
+                >
                   Products
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Action
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      class="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Another action
                     </NavLink>
                   </li>
@@ -48,7 +62,11 @@ const AccidentNav = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Something else here
                     </NavLink>
                   </li>
@@ -62,17 +80,26 @@ const AccidentNav = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{textDecoration: 'none'}}>
+                  style={{ textDecoration: "none" }}
+                >
                   Renew Your Policy
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Action
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      class="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Another action
                     </NavLink>
                   </li>
@@ -80,14 +107,22 @@ const AccidentNav = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Something else here
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item pl-2">
-                <NavLink className="nav-linktwo" to="#" style={{textDecoration: 'none'}}>
+                <NavLink
+                  className="nav-linktwo"
+                  to="#"
+                  style={{ textDecoration: "none" }}
+                >
                   File a Claim
                 </NavLink>
               </li>
@@ -99,17 +134,26 @@ const AccidentNav = () => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{textDecoration: 'none'}}>
+                  style={{ textDecoration: "none" }}
+                >
                   Contact Us
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Action
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink class="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      class="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Another action
                     </NavLink>
                   </li>
@@ -117,19 +161,31 @@ const AccidentNav = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="#" style={{textDecoration: 'none'}}>
+                    <NavLink
+                      className="dropdown-item"
+                      to="#"
+                      style={{ textDecoration: "none" }}
+                    >
                       Something else here
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item pl-2">
-                <NavLink className="nav-linktwo" to="#" style={{textDecoration: 'none'}}>
+                <NavLink
+                  className="nav-linktwo"
+                  to="#"
+                  style={{ textDecoration: "none" }}
+                >
                   Become a Partner
                 </NavLink>
               </li>
               <li className="nav-item pl-2">
-                <NavLink className="nav-linktwo" to="#" style={{textDecoration: 'none'}}>
+                <NavLink
+                  className="nav-linktwo"
+                  to="#"
+                  style={{ textDecoration: "none" }}
+                >
                   Cart <i className="fas fa-shopping-bag px-2"></i>
                 </NavLink>
               </li>
