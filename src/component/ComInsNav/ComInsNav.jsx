@@ -12,7 +12,7 @@ const ComInsNav = () => {
             to="#"
             style={{ textDecoration: "none" }}
           >
-            <img src={logo} alt="Logo" style={{ width: "70px" }} />
+            <img src={logo} alt="Logo" style={{ width: "120px" }} />
           </NavLink>
           <button
             className="navbar-toggler"
