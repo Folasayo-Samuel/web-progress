@@ -11,6 +11,9 @@ import Overview from './Overview'
 import Wallet from './Wallet'
 import Insurability from './Insurability'
 import Claim from './Claim'
+import Tracking from './Tracking'
+import Renewal from './Renewal'
+import Profile from './Profile'
 
 export default function Dashboard() {
   const { url, path } = useRouteMatch()
@@ -24,25 +27,23 @@ export default function Dashboard() {
           id="navbar"
           className={classnames(
             style.Navbar,
-            'col-md-3 col-lg-2 d-md-block bg-white collapse'
+            'col-md-3 col-lg-2 d-md-flex flex-column bg-white collapse px-0'
           )}
         >
-          <div className="position-sticky">
-            <figure className="d-flex flex-column align-items-center py-4 border-bottom gap-2">
-              <div className={style.AvaterImageContainer}>
-                <img
-                  src="/images/obama.jpg"
-                  alt="User Profile Image"
-                  className="img-fluid rounded-circle w-100 h-100"
-                />
-              </div>
-              <figcaption>Barack Obama</figcaption>
-              <div class={style.PrimaryTextColor}>My Profile</div>
-            </figure>
-          </div>
+          <figure className="d-flex flex-column align-items-center py-4 border-bottom gap-2">
+            <div className={style.AvaterImageContainer}>
+              <img
+                src="/images/obama.jpg"
+                alt="User Profile Image"
+                className="img-fluid rounded-circle w-100 h-100"
+              />
+            </div>
+            <figcaption>Barack Obama</figcaption>
+            <div class={style.PrimaryTextColor}>My Profile</div>
+          </figure>
 
-          <div class={classnames(style.NavLinksContainer, 'mt-4 px-2')}>
-            <h6 class="m-0 mb-3">Menu</h6>
+          <div class={classnames(style.NavLinksContainer, 'mt-3')}>
+            <h6 class="m-0 mb-3 ms-2 px-2">Menu</h6>
             <ul className="d-flex flex-column gap-3">
               <li>
                 <NavLink
@@ -111,6 +112,9 @@ export default function Dashboard() {
               </li>
             </ul>
           </div>
+          <button className="btn bg-theme d-block px-5 text-white m-auto">
+            Logout
+          </button>
         </nav>
         <div className="col-md-9 ms-sm-auto col-lg-10 py-3 px-md-4 d-flex flex-column gap-3">
           <Switch>
@@ -125,6 +129,15 @@ export default function Dashboard() {
             </Route>
             <Route path={`${path}/claim`}>
               <Claim />
+            </Route>
+            <Route path={`${path}/tracking`}>
+              <Tracking />
+            </Route>
+            <Route path={`${path}/renewal`}>
+              <Renewal />
+            </Route>
+            <Route path={`${path}/profile`}>
+              <Profile />
             </Route>
           </Switch>
         </div>

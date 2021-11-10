@@ -30,6 +30,18 @@ a:hover {
   color: inherit;
 }
 
+.bg-theme {
+  background: var(--primary-color);
+}
+
+.text-theme {
+  color: var(--primary-color);
+}
+
+.border-theme {
+  border-color: var(--primary-color);
+}
+
 .resImg {
   max-width: 100%;
   width: 100%;

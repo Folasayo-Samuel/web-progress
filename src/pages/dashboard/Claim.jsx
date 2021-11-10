@@ -78,13 +78,11 @@ export default function Claim() {
           </div>
         </div>
       </CardWrapper>
-      <div className="card mt-2 shadow">
-        <div className="card-header">
-          <div className="card-body d-flex flex-column align-items-center justify-content-center gap-2">
-            <BsUpload style={{ fontSize: '2em' }} />
-            <span>Select File or Drag and Drop Here</span>
-            <button className="btn btn-danger">Select</button>
-          </div>
+      <div className="card border-0 mt-2 shadow">
+        <div className="card-body d-flex flex-column align-items-center justify-content-center gap-2">
+          <BsUpload style={{ fontSize: '2em' }} />
+          <span>Select File or Drag and Drop Here</span>
+          <button className="btn btn-danger">Select</button>
         </div>
       </div>
     </>

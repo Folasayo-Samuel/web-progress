@@ -11,7 +11,7 @@ export default function CardWrapper({ title, wrapped, children }) {
       })}
     >
       <div className="card-header bg-white p-md-4 d-flex align-items-center justify-content-between">
-        <h2>{title}</h2>
+        <h2 className="fs-3">{title}</h2>
         <div className="d-flex gap-4">
           <BsBell /> <AiOutlineMore />
         </div>
