@@ -60,7 +60,7 @@ const NewsLetter = () => {
 
             <p>
               <textarea
-                rows="7"
+                rows="5"
                 name="sms"
                 onChange={handleChange}
                 value={sms}

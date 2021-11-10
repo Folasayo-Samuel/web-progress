@@ -88,6 +88,16 @@ const Footer = () => {
                 <h5>
                   Payment <span className="colored">Methods</span>{" "}
                 </h5>
+                <p>
+                  <img src={masterCard} alt="" width="50px" />
+                  <img src={visa} alt="" width="50px" />
+                  <img
+                    src={ussd}
+                    alt=""
+                    width="50px"
+                    style={{ display: "inline-block", padding: "8px" }}
+                  />
+                </p>
               </div>
               <div className="pay ">
                 <h5>

@@ -9,7 +9,9 @@
 html {
   font-family: Roboto;
 }
-
+.full_bg {
+  background-color: #f9f9f9;
+}
 .resImg {
   max-width: 100%;
   width: 100%;
@@ -21,6 +23,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
 }
 .login {
   background-color: transparent;
@@ -243,6 +246,8 @@ html {
   background-color: #fff;
   box-shadow: 1px 4px 6px #000;
   text-align: center;
+  border: 1px solid red;
+  padding: 2rem;
 }
 .BgShadows img {
   width: 70% !important;
@@ -710,7 +715,7 @@ html {
   .PaddingTop {
     margin-right: 20px;
   }
-  
+
   /*.designs li {
     padding-bottom: 25px !important;
   }*/

@@ -38,12 +38,10 @@ const AccidentRegister = () => {
   } = userDetails;
   return (
     <>
-      {/* <div className="navcolor">
-    <FormNavbar />
-    </div> <br /> */}
-      <div className="container">
-        <Nav dark={true} />
-      </div>
+      <div className="navcolor container ">
+        <FormNavbar />
+      </div>{" "}
+      <br />
       <div className="container chang">
         <form onSubmit={handleSubmit} className="bordsha">
           <div className="row">

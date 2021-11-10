@@ -17,9 +17,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <Homepage />
-        </Route>
         <Route path="/register">
           {/* ComprehensiveRegister */}
           <Comprehensive />
@@ -53,6 +50,12 @@ const App = () => {
         <Route path="/fileclaim">
           {/**File Claim */}
           <FileClaim />
+        </Route>
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+        <Route exact path="">
+          <Homepage />
         </Route>
       </Switch>
     </BrowserRouter>

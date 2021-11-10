@@ -9,38 +9,42 @@ import Faq from "../../component/Faq/Faq";
 import NewsLetter from "../../component/NewsLetter/NewsLetter";
 import { FaArrowRight } from "react-icons/fa";
 import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
-      <div className="Top">
-        <div className=" container">
-          <Nav dark={false} />
-          <div className="plan">
-            <h1 className="info">
-              Plan against tomorrow, by allowing us protect your interest.
-            </h1>
-            <p className="mt-4">Check if you are insurable here?</p>
-          </div>
-          <div className="top-btn mt-3">
-            <button className="btn btn-outline-danger hmm mt-2 ">
-              Check Insurability <FaArrowRight />
-            </button>
-            <button className="btn hmm-reverse btn-get mt-2">
-              Get started
-            </button>
+      <BrowserRouter>
+        <div className="Top">
+          <div className=" container">
+            <Navbar dark={false} />
+            <div className="plan">
+              <h1 className="info">
+                Plan against tomorrow, by allowing us protect your interest.
+              </h1>
+              <p className="mt-4">Check if you are insurable here?</p>
+            </div>
+            <div className="top-btn mt-3">
+              <button className="btn btn-outline-danger hmm mt-2 ">
+                Check Insurability <FaArrowRight />
+              </button>
+              <button className="btn hmm-reverse btn-get mt-2">
+                Get started
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <Partners />
-      <InsureSlide />
-      <Products />
-      <Proposition />
-      <Features />
-      <Subfooter />
-      <InsureSlide />
-      <Faq />
-      <NewsLetter />
-      <Footer />
+        <Partners />
+        <InsureSlide />
+        <Products />
+        <Proposition />
+        <Features />
+        <Subfooter />
+        <InsureSlide />
+        <Faq />
+        <NewsLetter />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 };

@@ -38,12 +38,10 @@ const Register = () => {
   } = userDetails;
   return (
     <>
-      <div className="navcolor">
+      <div className="navcolor container ">
     <FormNavbar />
     </div> <br />
-      {/* <div className="" >
-        <Nav dark="true" />
-      </div> */}
+      
       <div className="container chang">
         <form onSubmit={handleSubmit} className="bordsha">
           <div className="row">

@@ -15,12 +15,12 @@ const Navbar = ({ dark }) => {
       >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="#">
-            {/* <img
-              src={dark ? { darkLogo } : { lightLogo }}
+            <img
+              src={dark ? `${darkLogo}` : `${lightLogo}`}
               alt="logo"
-              width="200px"
-            /> */}
-            <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} />
+              width="120px"
+            />
+            {/* <img src="./Image/logo.jpg" alt="Logo" style={{ width: "70px" }} /> */}
           </NavLink>
           <button
             className="navbar-toggler"
@@ -35,7 +35,7 @@ const Navbar = ({ dark }) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown  ">
                 <NavLink
                   className="nav-link dropdown-toggle pl-2"
                   to="#"
@@ -47,22 +47,31 @@ const Navbar = ({ dark }) => {
                   Products
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
-                      Action
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="/personalaccident">
+                      Accident
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
-                      Another action
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="/gadgetinsurance">
+                      Gadget
                     </NavLink>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider" />
+
+                  <li className="nav-item">
+                    <NavLink
+                      className="  dropdown-item"
+                      to="/comprehensivecontents"
+                    >
+                      Motor
+                    </NavLink>
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
-                      Something else here
+                  <li className="nav-item">
+                    <NavLink
+                      className="  dropdown-item"
+                      to="/thirdpartycontent"
+                    >
+                      Third Party
                     </NavLink>
                   </li>
                 </ul>
@@ -79,28 +88,28 @@ const Navbar = ({ dark }) => {
                   Renew Your Policy
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Action
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Another action
                     </NavLink>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider" />
+                  <li className="nav-item">
+                    <hr className="dropd  own-divider" />
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Something else here
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item pl-2">
-                <NavLink className="nav-link" to="#">
+                <NavLink className="nav-link" to="/fileclaim">
                   File a Claim
                 </NavLink>
               </li>
@@ -116,21 +125,21 @@ const Navbar = ({ dark }) => {
                   Contact Us
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Action
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Another action
                     </NavLink>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider" />
+                  <li className="nav-item">
+                    <hr className="dropd  own-divider" />
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="#">
+                  <li className="nav-item">
+                    <NavLink className="  dropdown-item" to="#">
                       Something else here
                     </NavLink>
                   </li>

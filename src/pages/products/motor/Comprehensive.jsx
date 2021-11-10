@@ -39,7 +39,7 @@ const ComprehensiveRegister = () => {
   } = userDetails;
   return (
     <>
-    <div className="navcolor">
+    <div className="navcolor container">
     <FormNavbar />
     </div> <br />
     <div className="container chang">
