@@ -12,6 +12,7 @@ import ComContents from './pages/products/motor/ComContent'
 import AccidentContent from './pages/products/accident/AccidentContent'
 import PartyContents from './pages/products/thirdparty/PartyContents'
 import FileClaim from './pages/fileclaim/FileClaim'
+import Dashboard from './pages/dashboard'
 
 const App = () => {
   return (
@@ -54,8 +55,8 @@ const App = () => {
         <Route exact path="/">
           <Homepage />
         </Route>
-        <Route exact path="">
-          <Homepage />
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
       </Switch>
     </BrowserRouter>
