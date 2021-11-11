@@ -1,17 +1,17 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 // import "./Fontawesome";
-import Homepage from "./pages/homepage/Homepage";
-import "./App.css";
-import Register from "./pages/products/gadget/Register";
-import Comprehensive from "./pages/products/motor/Comprehensive";
-import Thirdpartyform from "./pages/products/thirdparty/Register";
-import AccidentRegister from "./pages/products/accident/Register";
-import GadgetInsurance from "./pages/products/gadget/Gadget";
-import ComContents from "./pages/products/motor/ComContent";
-import AccidentContent from "./pages/products/accident/AccidentContent";
-import PartyContents from "./pages/products/thirdparty/PartyContents";
-import FileClaim from "./pages/fileclaim/FileClaim";
+import Homepage from './pages/homepage'
+import './App.css'
+import Register from './pages/products/gadget/Register'
+import Comprehensive from './pages/products/motor/Comprehensive'
+import Thirdpartyform from './pages/products/thirdparty/Register'
+import AccidentRegister from './pages/products/accident/Register'
+import GadgetInsurance from './pages/products/gadget/Gadget'
+import ComContents from './pages/products/motor/ComContent'
+import AccidentContent from './pages/products/accident/AccidentContent'
+import PartyContents from './pages/products/thirdparty/PartyContents'
+import FileClaim from './pages/fileclaim/FileClaim'
 
 const App = () => {
   return (
@@ -59,7 +59,7 @@ const App = () => {
         </Route>
       </Switch>
     </BrowserRouter>
-  );
-};
+  )
+}
 
-export default App;
+export default App
