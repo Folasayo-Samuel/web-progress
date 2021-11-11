@@ -78,12 +78,18 @@ html {
 }
 .nav-linktwo {
   color: #000 !important;
+  margin-left: 1.5rem;
 }
 .co {
   color: #e62e4e;
 }
 .Top {
-  background-image: url("./assest/images/Background.jpg");
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(230, 46, 78, 0.6),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./assest/images/Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -202,10 +208,13 @@ html {
   height: 100%;
   position: relative;
   margin-top: 1rem;
+  min-height: 476px;
+  /* margin-top: 3rem; */
 }
 .cardtwo:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 .spacebottom {
   padding-bottom: 15px;
 }
@@ -426,9 +435,6 @@ html {
   content: "\00b7";
   font-size: 100px;
 } */
-.righttwo {
-  margin-top: -150px;
-}
 
 .light {
   color: #fff;
@@ -612,10 +618,17 @@ html {
   max-width: 300px;
   width: 300px;
 }
-.chat .text {
+.chat-right {
+  display: flex;
+  align-items: center;
+  margin: 1.3rem 0;
+  max-width: 300px;
+  width: 300px;
+}
+.chat .text,
+.chat-right .text {
   box-shadow: 0px 0px 7px #888888;
   min-width: 120px;
-
   padding: 0.2rem 0.7rem;
 }
 .chatform {
@@ -732,6 +745,18 @@ html {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .righttwo {
+    margin-top: 50px;
+  }
+  /* .phone {
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  } */
+}
+
 @media screen and (max-width: 480px) {
   .sub_footer h4 {
     font-size: 2rem;
@@ -740,7 +765,7 @@ html {
     flex-direction: column;
   }
   .righttwo {
-    margin-top: 0;
+    margin-top: 50px;
   }
   .faq_content {
     width: 100%;

@@ -10,9 +10,9 @@ const Faq = () => {
 
         <ul className="que">
           {FaqData &&
-            FaqData.map((data) => {
+            FaqData.map((data,index) => {
               return (
-                <li className="">
+                <li className=""  key={index} >
                   <span>{data.que} </span>
                   <div className="add">
                     <FaPlus />

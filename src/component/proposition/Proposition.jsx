@@ -43,10 +43,10 @@ const Proposition = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12 col-md-3 d-flex justify-content-start text-center ">
+          <div className="  col-sm-12 col-md-3 d-flex justify-content-start text-center ">
             <img src={propPic} alt="Phone" style={{ width: "85%" ,  }} />
           </div>
-          <div className="col-sm-12 col-md-4 ">
+          <div className="col-sm-12 col-md-4 mt-5">
             <ul className="listtwo list">
               <li className="pb-5">
                 <span>Real time Tracking and monitoring your claims </span>

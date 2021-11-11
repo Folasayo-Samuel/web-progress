@@ -10,11 +10,10 @@ import NewsLetter from "../../component/NewsLetter/NewsLetter";
 import { FaArrowRight } from "react-icons/fa";
 import Footer from "../../component/Footer/Footer";
 import Navbar from "../../component/navbar/Navbar";
-import { BrowserRouter } from "react-router-dom";
 const Homepage = () => {
   return (
-    <>
-      <BrowserRouter>
+   
+      <>
         <div className="Top">
           <div className=" container">
             <Navbar dark={false} />
@@ -44,8 +43,8 @@ const Homepage = () => {
         <Faq />
         <NewsLetter />
         <Footer />
-      </BrowserRouter>
-    </>
+      </>
+
   );
 };
 

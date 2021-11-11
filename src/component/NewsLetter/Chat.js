@@ -32,22 +32,22 @@ const Chat = () => {
           <FaRegTimesCircle />
         </span>
         
-         <p className="chat mt-4">
+         <div className="chat mt-4">
                 <div className="user_img mr-3">
                   <img src={User} alt="" />
                 </div>
                 <div className="text"> Hi</div>
-              </p>
+              </div>
         
         {chat &&
           chat.map((message) => {
             return (
-              <p className="chat mt-4" key={message.id} >
+              <div className="chat-right mt-4" key={message.id} >
+                <div className="text"> {message.sms} </div>
                 <div className="user_img mr-3">
                   <img src={User} alt="" />
                 </div>
-                <div className="text"> {message.sms} </div>
-              </p>
+              </div>
             );
           })}
 
