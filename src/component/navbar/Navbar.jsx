@@ -105,11 +105,7 @@ const Navbar = ({ dark }) => {
               </ul>
             </li>
             <li className="nav-item pl-2">
-              <NavLink
-                style={{ textDecoration: "none" }}
-                className="nav-linktwo pl-5"
-                to="/fileclaim"
-              >
+              <NavLink className="nav-link pl-5" to="/fileclaim">
                 File a Claim
               </NavLink>
             </li>

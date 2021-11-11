@@ -8,7 +8,7 @@ const ComInsNav = () => {
       <div className="container-fluid">
         <NavLink
           className="navbar-brand"
-          to="#"
+          to="/"
           style={{ textDecoration: "none" }}
         >
           <img src={logo} alt="Logo" style={{ width: "120px" }} />

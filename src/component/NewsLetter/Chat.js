@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaRegTimesCircle, FaTelegramPlane } from "react-icons/fa";
 import User from "../../assest/images/Eight.png";
 
-const Chat = () => {
+const Chat = ({showChat, setShowChat}) => {
   const [chat, setChat] = useState([]);
   const [userInput, setUserInput] = useState("");
   const handleChange = (e) => {
@@ -19,8 +19,13 @@ const Chat = () => {
       //  }, [])
       setUserInput("");
     }
-    console.log(chat);
   };
+
+  const handleShowChat =()=>{
+    setShowChat(false)
+  }
+
+
 
   return (
     <>
@@ -28,12 +33,12 @@ const Chat = () => {
         <h4 className="text-center text-bold ">
           Live<span className="colored">Chat </span>{" "}
         </h4>
-        <span className="close">
+        <span className="close" onClick={handleShowChat} >
           <FaRegTimesCircle />
         </span>
         
          <div className="chat mt-4">
-                <div className="user_img mr-3">
+                <div className="user_img ml-3">
                   <img src={User} alt="" />
                 </div>
                 <div className="text"> Hi</div>
@@ -44,7 +49,7 @@ const Chat = () => {
             return (
               <div className="chat-right mt-4" key={message.id} >
                 <div className="text"> {message.sms} </div>
-                <div className="user_img mr-3">
+                <div className="user_img2 ">
                   <img src={User} alt="" />
                 </div>
               </div>

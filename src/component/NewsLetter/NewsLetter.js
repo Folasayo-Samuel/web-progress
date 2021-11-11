@@ -8,6 +8,7 @@ const NewsLetter = () => {
     sms: "",
   };
   const [smsDetails, setSmsDetails] = useState(initialData);
+  const [showChat, setShowChat] = useState(false)
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -17,6 +18,9 @@ const NewsLetter = () => {
     e.preventDefault();
     console.log(smsDetails);
   };
+
+
+
 
   const { email, sms, name } = smsDetails;
 
@@ -103,8 +107,8 @@ const NewsLetter = () => {
             </form>
           </div>
 
-          <div className="chat_box">
-            <Chat />
+          <div className={showChat ? "chat-none": " chat_box"}>
+            <Chat showChat={showChat} setShowChat={setShowChat} />
           </div>
         </div>
       </div>
