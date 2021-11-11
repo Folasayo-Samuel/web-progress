@@ -38,8 +38,24 @@ a:hover {
   color: var(--primary-color);
 }
 
+.text-theme-secondary {
+  color: #7a7a7a;
+}
+
 .border-theme {
   border-color: var(--primary-color);
+}
+
+.bg-theme-secondary {
+  background: #273943;
+}
+
+.bg-theme-success {
+  background: #2aaa05;
+}
+
+.bg-theme-danger {
+  background: #9d0130;
 }
 
 .resImg {

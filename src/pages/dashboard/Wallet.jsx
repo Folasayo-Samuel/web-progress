@@ -19,14 +19,16 @@ export default function Wallet() {
                   className="form-control"
                   placeholder="Enter amount"
                 />
-                <button className="btn btn-success mt-2 px-4">Fund</button>
+                <button className="btn btn-success bg-theme-success mt-2 px-4">
+                  Fund
+                </button>
               </form>
             </div>
           </div>
           <div className="col-12 col-md-5 card shadow-sm">
             <div className="card-body row align-items-center">
               <div className="col-6">
-                <img src="/images/credit-card.png" class="img-fluid" />
+                <img src="/images/credit-card.png" className="img-fluid" />
               </div>
               <div
                 className={classNames(
@@ -34,8 +36,12 @@ export default function Wallet() {
                   style.PrimaryTextColor
                 )}
               >
-                <a href="">Add New Card</a>
-                <a href="">Remove Card</a>
+                <a href="" className="text-decoration-underline">
+                  Add New Card
+                </a>
+                <a href="" className="text-decoration-underline">
+                  Remove Card
+                </a>
               </div>
             </div>
           </div>
@@ -47,7 +53,7 @@ export default function Wallet() {
             <strong>Transaction History</strong>
           </div>
           <div className="card-body mw-100 overflow-auto">
-            <table class="table table-hover align-middle">
+            <table className="table table-hover align-middle">
               <thead>
                 <tr>
                   <th scope="col">Amount Funded</th>
@@ -60,7 +66,7 @@ export default function Wallet() {
                 <tr>
                   <td>N50,000</td>
                   <td>
-                    <span className="badge bg-success">Successful</span>
+                    <span className="badge bg-theme-success">Successful</span>
                   </td>
                   <td>7/24/2022</td>
                   <td>10:34am</td>
@@ -68,7 +74,7 @@ export default function Wallet() {
                 <tr>
                   <td>N50,000</td>
                   <td>
-                    <span className="badge bg-danger">Failed</span>
+                    <span className="badge bg-theme-danger">Failed</span>
                   </td>
                   <td>7/24/2022</td>
                   <td>10:30am</td>
@@ -76,7 +82,7 @@ export default function Wallet() {
                 <tr>
                   <td>N70,000</td>
                   <td>
-                    <span className="badge bg-success">Successful</span>
+                    <span className="badge bg-theme-success">Successful</span>
                   </td>
                   <td>7/24/2020</td>
                   <td>08:30am</td>

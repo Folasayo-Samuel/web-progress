@@ -16,7 +16,7 @@ export default function CardWrapper({ title, wrapped, children }) {
           <BsBell /> <AiOutlineMore />
         </div>
       </div>
-      <div class="card-body">{children}</div>
+      <div className="card-body">{children}</div>
     </main>
   )
 }

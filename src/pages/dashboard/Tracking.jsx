@@ -5,7 +5,7 @@ import classnames from 'classnames'
 export default function Tracking() {
   return (
     <CardWrapper title="Track Claim" wrapped={false}>
-      <div className="row px-5 py-3 gap-4 align-items-stretch">
+      <div className="row px-md-5 py-3 gap-4 align-items-stretch">
         <div className="col-12 col-md-6 shadow">
           <div className="card-header bg-transparent">
             <strong>Track Claim</strong>
@@ -20,7 +20,9 @@ export default function Tracking() {
                 placeholder="Enter your policy number"
               />
               <div className="d-flex justify-content-end">
-                <button className="btn btn-secondary mt-2 px-5">Track</button>
+                <button className="btn btn-secondary bg-theme-secondary mt-2 px-5">
+                  Track
+                </button>
               </div>
             </form>
           </div>

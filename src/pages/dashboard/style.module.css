@@ -1,7 +1,7 @@
 .Navbar {
   position: fixed;
   top: 0;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   z-index: 100;
 }
@@ -11,9 +11,6 @@
   font-size: 1em;
 }
 
-.NavLinksContainer {
-}
-
 .NavLink {
   display: flex;
   gap: 0.8em;
@@ -21,6 +18,7 @@
   text-transform: capitalize;
   color: #7a7a7a;
   padding: 0 1em;
+  border-left: 0.2em solid transparent;
 }
 
 .NavLinkActive svg {
@@ -41,8 +39,8 @@
 }
 
 .AvaterImageContainer {
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   position: relative;
 }
 
@@ -65,4 +63,11 @@
 
 .WalletCard {
   height: 10em;
+}
+
+@media screen and (min-width: 768px) {
+  .AvaterImageContainer {
+    width: 4em;
+    height: 4em;
+  }
 }

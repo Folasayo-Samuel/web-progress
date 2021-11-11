@@ -11,7 +11,7 @@ export default function Renewal() {
           <div className="col-12 col-md-2 text-center">
             <div className="dropdown">
               <button
-                className="btn btn-secondary border px-4 dropdown-toggle fs-6"
+                className="btn btn-secondary bg-theme-secondary border px-4 dropdown-toggle fs-6"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
@@ -41,8 +41,8 @@ export default function Renewal() {
               </ul>
             </div>
           </div>
-          <div className="col-12 col-md-10">
-            <table class="table table-borderless align-middle">
+          <div className="col-12 col-md-10 overflow-auto">
+            <table className="table table-borderless align-middle">
               <thead>
                 <tr>
                   <th scope="col">Policy</th>
@@ -60,7 +60,10 @@ export default function Renewal() {
                   <td>EXC678MM2</td>
                   <td>14 Days Remaining</td>
                   <td>
-                    <button className="btn btn-secondary px-4" disabled>
+                    <button
+                      className="btn btn-secondary bg-theme-secondary px-4"
+                      disabled
+                    >
                       Renew
                     </button>
                   </td>
@@ -76,7 +79,9 @@ export default function Renewal() {
                   <td>EXC678GD2</td>
                   <td>Expired</td>
                   <td>
-                    <button className="btn btn-secondary px-4">Renew</button>
+                    <button className="btn btn-secondary bg-theme-secondary px-4">
+                      Renew
+                    </button>
                   </td>
                 </tr>
 
@@ -91,7 +96,10 @@ export default function Renewal() {
                   <td>EXC678MM2</td>
                   <td>5 Days Remaining</td>
                   <td>
-                    <button className="btn btn-secondary px-4" disabled>
+                    <button
+                      className="btn btn-secondary bg-theme-secondary px-4"
+                      disabled
+                    >
                       Renew
                     </button>
                   </td>
@@ -107,7 +115,9 @@ export default function Renewal() {
                   <td>EXC678MM2</td>
                   <td>Expired</td>
                   <td>
-                    <button className="btn btn-secondary px-4">Renew</button>
+                    <button className="btn btn-secondary bg-theme-secondary px-4">
+                      Renew
+                    </button>
                   </td>
                 </tr>
                 <tr style={{ height: '0.5em' }}></tr>
@@ -121,7 +131,9 @@ export default function Renewal() {
                   <td>EXC678MM2</td>
                   <td>Expired</td>
                   <td>
-                    <button className="btn btn-secondary px-4">Renew</button>
+                    <button className="btn btn-secondary bg-theme-secondary px-4">
+                      Renew
+                    </button>
                   </td>
                 </tr>
               </tbody>

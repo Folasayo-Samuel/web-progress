@@ -3,10 +3,17 @@ import { FaPencilAlt } from 'react-icons/fa'
 import { BiWallet, BiSearch } from 'react-icons/bi'
 import { MdSignalCellularAlt, MdOutlineAutorenew } from 'react-icons/md'
 import { RiEdit2Line, RiFileEditLine } from 'react-icons/ri'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import classnames from 'classnames'
 
 import style from './style.module.css'
-import { NavLink, Route, Switch, useRouteMatch } from 'react-router-dom'
+import {
+  NavLink,
+  Route,
+  Switch,
+  useLocation,
+  useRouteMatch,
+} from 'react-router-dom'
 import Overview from './Overview'
 import Wallet from './Wallet'
 import Insurability from './Insurability'
@@ -14,9 +21,18 @@ import Claim from './Claim'
 import Tracking from './Tracking'
 import Renewal from './Renewal'
 import Profile from './Profile'
+import { useEffect } from 'react'
 
 export default function Dashboard() {
   const { url, path } = useRouteMatch()
+  const location = useLocation()
+
+  useEffect(() => {
+    const dashboardNav = document.getElementById('navLinks-Container')
+    if (dashboardNav) {
+      dashboardNav.classList.remove('show')
+    }
+  }, [location])
   return (
     <Container
       fluid={true}
@@ -25,12 +41,22 @@ export default function Dashboard() {
       <Row className="w-100 h-100 m-0">
         <nav
           id="navbar"
-          className={classnames(
-            style.Navbar,
-            'col-md-3 col-lg-2 d-md-flex flex-column bg-white collapse px-0'
-          )}
+          className="fixed-top top-0 start-0 mh-100 overflow-hidden col-md-3 col-lg-2 d-md-flex flex-column bg-white px-0"
+          style={{ zIndex: '1000' }}
         >
-          <figure className="d-flex flex-column align-items-center py-4 border-bottom gap-2">
+          <button
+            className="btn btn-outline-primary position-absolute d-md-none border text-theme"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navLinks-Container"
+            aria-controls="navLinks-Container"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style={{ right: '1em', top: '0.5em' }}
+          >
+            <GiHamburgerMenu />
+          </button>
+          <figure className="d-flex flex-md-column align-items-center px-2 pb-0 pt-2 pt-md-4 pb-md-2 gap-2">
             <div className={style.AvaterImageContainer}>
               <img
                 src="/images/obama.jpg"
@@ -39,11 +65,18 @@ export default function Dashboard() {
               />
             </div>
             <figcaption>Barack Obama</figcaption>
-            <div class={style.PrimaryTextColor}>My Profile</div>
+            <div className="text-theme d-none d-md-block">My Profile</div>
           </figure>
+          <div className="border-bottom"></div>
 
-          <div class={classnames(style.NavLinksContainer, 'mt-3')}>
-            <h6 class="m-0 mb-3 ms-2 px-2">Menu</h6>
+          <div
+            id="navLinks-Container"
+            className={classnames(
+              style.NavLinksContainer,
+              'mt-4 flex-grow-1 vh-100 d-md-flex flex-column collapse'
+            )}
+          >
+            <h6 className="m-0 mb-3 ms-2 px-2">Menu</h6>
             <ul className="d-flex flex-column gap-3">
               <li>
                 <NavLink
@@ -111,12 +144,12 @@ export default function Dashboard() {
                 </NavLink>
               </li>
             </ul>
+            <button className="btn bg-theme d-block px-5 text-white order-md-5 mt-5 mt-md-auto m-auto">
+              Logout
+            </button>
           </div>
-          <button className="btn bg-theme d-block px-5 text-white m-auto">
-            Logout
-          </button>
         </nav>
-        <div className="col-md-9 ms-sm-auto col-lg-10 py-3 px-md-4 d-flex flex-column gap-3">
+        <div className="col-md-9 ms-sm-auto col-lg-10 py-3 pt-5 pt-md-4 px-md-4 d-flex flex-column gap-3">
           <Switch>
             <Route path={path} exact>
               <Overview />
