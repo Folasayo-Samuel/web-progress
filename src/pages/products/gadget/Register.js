@@ -49,7 +49,7 @@ const Register = () => {
               Place <span className="Ins">cover on</span> Gadget
             </h2>
 
-            <div className="col">
+            <div className="col-12 col-md-6 px-md-5">
               <label htmlFor="Full Name" className="pt-4">
                 Full Name <br />
                 <input
@@ -99,7 +99,7 @@ const Register = () => {
               </label>
             </div>
 
-            <div className="col">
+            <div className="col-12 col-md-6 px-md-5">
               <label htmlFor="Contact Address" className="pt-4">
                 Contact Address <br />
                 <input

@@ -50,7 +50,7 @@ const AccidentRegister = () => {
               Insurance
             </h2>
 
-            <div className="col">
+            <div className="col-12 col-md-6 px-md-5">
               <label htmlFor="Full Name" className="pt-4">
                 Full Name <br />
                 <input
@@ -59,7 +59,7 @@ const AccidentRegister = () => {
                   value={fullName}
                   onChange={handleChange}
                   placeholder="Enter Your Name"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -71,7 +71,7 @@ const AccidentRegister = () => {
                   value={phoneNumber}
                   onChange={handleChange}
                   placeholder="Enter Phone Number"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -83,7 +83,7 @@ const AccidentRegister = () => {
                   name="birthDate"
                   onChange={handleChange}
                   placeholder="Enter Date Of Birth"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -95,12 +95,12 @@ const AccidentRegister = () => {
                   name="email"
                   onChange={handleChange}
                   placeholder="Enter Your Email"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
             </div>
 
-            <div className="col">
+            <div className="col-12 col-md-6 px-md-5">
               <label htmlFor="Contact Address" className="pt-4">
                 Contact Address <br />
                 <input
@@ -109,7 +109,7 @@ const AccidentRegister = () => {
                   value={address}
                   onChange={handleChange}
                   placeholder="Enter Your Address"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -124,7 +124,7 @@ const AccidentRegister = () => {
                   value={itemModel}
                   onChange={handleChange}
                   placeholder="Enter Your Type &amp; Model"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -136,7 +136,7 @@ const AccidentRegister = () => {
                   value={itemValue}
                   onChange={handleChange}
                   placeholder="Enter Your Value of the insured item"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
               <br />
@@ -150,7 +150,7 @@ const AccidentRegister = () => {
                   placeholdersubmitone="Enter Your IMEI number"
                   style={{ width: "100%" }}
                   placeholder="Engter Your IMEI Number"
-                  className="container-fluid"
+                  className="form-control"
                 />
               </label>
             </div>

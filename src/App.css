@@ -194,11 +194,22 @@ html {
   text-align: left;
   box-shadow: 10px 10px 10px 10px #888888;
 }
-/* .form-control{
-
-} */
+label {
+  width: 100%;
+}
+.form-control {
+  border-radius: 0px !important;
+  padding: .5rem 1rem ;
+}
+.form-control:focus {
+  /* outline: none !important; */
+  box-shadow: 0px 0px 0px #000;
+  width: 100%;
+  border: 1px solid #888888;
+}
 .chang {
-  background-color: #faf8f8;
+  /* background-color: #faf8f8; */
+  margin-top: 1rem;
   text-align: center;
 }
 .navcolor {
